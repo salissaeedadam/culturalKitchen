@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import { RiCloseCircleLine } from "react-icons/ri";
+import { HiBars3BottomRight } from "react-icons/hi2"
 
 const MobileNav = ({ menuItems, Logo, onClose, hideLeft, onOpen }) => {
   return (
@@ -10,9 +11,9 @@ const MobileNav = ({ menuItems, Logo, onClose, hideLeft, onOpen }) => {
         <RiCloseCircleLine className="w-7 h-7" />
       </button>
       <button onClick={onOpen} className="mt-4">
-        Open Menu
+        <HiBars3BottomRight className="w-7 h-7" />
       </button>
-      <div className="mt-8">
+      <div className="h-16 flex justify-between items-center px-6 lg:px-12">
         <a href="/">
           <img src={Logo} alt="logo" />
         </a>
